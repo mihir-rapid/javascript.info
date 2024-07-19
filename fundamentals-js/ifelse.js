@@ -24,4 +24,3 @@ let result = (a + b < 4) ? 'Below' : 'Over'
 
 // task-4
 let message = (login == "Employee") ? "Hello" : (login == "Director") ? "Greetings" : (login == '') ? "No Login" : ''
-

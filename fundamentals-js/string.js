@@ -212,6 +212,12 @@ console.log(myArr1.trim());
 // str.repeat(n)
 console.log(myArr1.repeat(10));
 
+// str.replace(element, value)
+
+let myUrl = "https://mihir%20xtc.com"   // mihir%20xtc
+let refinedURL = myUrl.replace('%20', '-')  // mihir-xtc
+console.log(refinedURL);
+
 
 // Tasks
 
@@ -248,3 +254,36 @@ function extractCurrencyValue(str) {
     return +str.slice(1)
 }
 console.log(extractCurrencyValue('₹120'))
+
+
+// More String Exercises
+
+// 1. write a function to check whether an input is string or not
+
+function checkString(str) {
+    if (typeof str === 'string') {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(checkString("mihir"));
+console.log(checkString([1, 2, 3]));
+
+// 2. write a function to check whether string is blank or not
+
+function checkBlank(str) {
+    if (str.length > 0) {
+        return false
+    } else {
+        return true
+    }
+}
+console.log(checkBlank(""));
+
+// 3. write a function to convert string into array of words
+
+function arrayOfWords(str) {
+    return str.trim().split(' ')
+}
+console.log(arrayOfWords("Mihir Menon"));

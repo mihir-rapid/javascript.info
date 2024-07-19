@@ -213,4 +213,4 @@ function randomInteger(min, max) {
     return Math.floor(rand);
   }
   
-  console.log( randomInteger(1, 3));
+console.log( randomInteger(1, 3));
